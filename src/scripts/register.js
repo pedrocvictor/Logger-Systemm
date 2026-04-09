@@ -28,3 +28,16 @@ alert('Usuário cadastrado com sucesso!');
 window.location.href = './login.html'; /*redireciona para a página de login*/
 
 });
+
+const checkbox =  document.querySelector('#checkbox-register'); 
+
+checkbox.addEventListener('change', () => {
+    const type = password.getAttribute('type'); 
+
+    if (type === 'password') {
+        password.setAttribute('type', 'text');
+        return;
+    };
+
+    password.setAttribute('type', 'password');
+});

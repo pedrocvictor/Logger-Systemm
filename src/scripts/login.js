@@ -25,4 +25,8 @@ if (
 };
 
 alert(`Bem-vindo, ${sessionStorage.getItem('name')}!`); /*sessionStorage.getItem() é um método usado para recuperar um valor armazenado em sessionStorage, onde o parâmetro é a chave do valor que queremos recuperar. No exemplo acima, estamos recuperando o nome do usuário com a chave 'name' e exibindo uma mensagem de boas-vindas usando template literals (``) para inserir o valor recuperado na mensagem. */
+
+window.location.href = './home.html'; /*redireciona para a página de home*/
 });
+
+
